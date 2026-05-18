@@ -55,8 +55,7 @@ Analyzes a topic by fetching data and verifying relevant images.
 **Request Body:**
 ```json
 {
-  "topic": "Tesla Model Y",
-  "query": "Is the fetched image contextually accurate and relevant to the facts stated in the retrieved text chunks?"
+  "topic": "Tesla Model Y"
 }
 ```
 
