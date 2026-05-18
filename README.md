@@ -97,8 +97,8 @@ The engine provides **Execution Metrics** for observability, including total tim
         "chunks_evaluated": 2
     },
     "retrieved_context": [
-        "The Tesla Model Y is a battery electric compact crossover SUV produced by Tesla, Inc. since 2020...",
-        "In 2023, Tesla delivered 1.2 million Model Ys, making it the world's best-selling vehicle that year..."
+        "The Tesla Model Y is a battery electric compact crossover SUV produced by Tesla, Inc. since 2020. Presented in March 2019 as the company's fifth production model, the Model Y is the best-selling electric vehicle of all time, having sold more than 2.16 million units worldwide. After its 2019 introduction, it began production at Tesla's Fremont plant in January 2020 and deliveries started in March 2020.",
+        "The Model Y's design is based on the Model 3 sedan, with which it shares an estimated 75 percent of its parts, including similar interior styling. While most Model Y are configured with two-row seating, in the US the Model Y offered optional third-row seats for a seven-passenger seating capacity until the 2025 refresh. In 2023, Tesla delivered 1.2 million Model Ys, making it the world's best-selling vehicle that year."
     ],
     "verification_results": {
         "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/2022_Tesla_Model_Y_Long_Range_AWD_Front.jpg/330px-2022_Tesla_Model_Y_Long_Range_AWD_Front.jpg",
