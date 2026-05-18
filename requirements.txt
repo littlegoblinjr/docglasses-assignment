@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+httpx
+wikipedia-api
+sentence-transformers
+faiss-cpu
+pydantic
+langchain-openai
