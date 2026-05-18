@@ -2,7 +2,7 @@
 
 A high-performance, production-ready FastAPI microservice designed for automated fact-verification. This engine dynamically fetches Wikipedia content and images, performs local vector search (RAG), and utilizes an open-source vision-language model (VLM) to verify if visual media accurately matches retrieved text facts.
 
-## 🛠️ Project Philosophy: Zero-OpEx & High Performance
+## Project Philosophy: Zero-OpEx & High Performance
 The design of this engine focuses on three core principles:
 1. **Zero Operating Expense (Zero-OpEx)**: Leverages only free APIs and high-performance local models to avoid recurring third-party API costs.
 2. **Deterministic Outputs**: Uses Pydantic-enforced structured outputs (JSON) to ensure the VLM response integrates seamlessly with downstream industrial pipelines.
@@ -10,7 +10,7 @@ The design of this engine focuses on three core principles:
 
 ---
 
-## 🏗️ Deep-Dive Architecture
+## Deep-Dive Architecture
 
 The backend implements a sophisticated 4-layer pipeline:
 
@@ -34,7 +34,7 @@ The backend implements a sophisticated 4-layer pipeline:
 
 ---
 
-## ⚙️ Configuration & Production Readiness
+## Configuration & Production Readiness
 The project features a **Centralized Configuration System** in `app/core/config.py`. This ensures compliance with "The Twelve-Factor App" principles, allowing you to swap models or update endpoints without modifying any service logic.
 
 | Setting | Purpose |
@@ -46,7 +46,7 @@ The project features a **Centralized Configuration System** in `app/core/config.
 
 ---
 
-## 🚀 Setup & Execution
+## Setup & Execution
 
 ### Prerequisites
 - Python 3.9+
@@ -67,7 +67,7 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000
 
 ---
 
-## 📡 API Documentation
+## API Documentation
 
 ### POST `/analyze`
 Performs dynamic data fetching, RAG search, and multimodal fact verification.
@@ -104,7 +104,7 @@ The engine provides **Execution Metrics** for observability, including total tim
 
 ---
 
-## 💎 Why This Engine Stands Out
+## Why This Engine Stands Out
 - **Observability**: Built-in execution metrics track RAG and Inference efficiency.
 - **Connection Pooling**: Uses a shared `HttpClient` to reuse TCP connections, slashing network latency.
 - **Modular Services**: Decoupled `embedding`, `vector`, `chunking`, and `vlm` services allow for easy unit testing and replacement.
