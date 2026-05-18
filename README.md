@@ -101,7 +101,7 @@ The engine provides **Execution Metrics** for observability, including total tim
         "In 2023, Tesla delivered 1.2 million Model Ys, making it the world's best-selling vehicle that year..."
     ],
     "verification_results": {
-        "image_url": "https://upload.wikimedia.org/.../Model_Y_Front.jpg",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/2022_Tesla_Model_Y_Long_Range_AWD_Front.jpg/330px-2022_Tesla_Model_Y_Long_Range_AWD_Front.jpg",
         "image_is_relevant": true,
         "confidence_score": 0.95,
         "synthesis_summary": "The image depicts a blue Tesla Model Y, which is accurately described in the retrieved chunks."
