@@ -1,7 +1,6 @@
 from fastapi import APIRouter, Depends, HTTPException
 from app.services.wikipedia_service import fetch_wikipedia_content, fetch_wikipedia_image
 from app.services.chunking_service import chunk_text
-import asyncio
 import time
 from app.models.request_models import QueryRequest
 from app.services.embedding_service import get_embeddings_for_chunks

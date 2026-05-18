@@ -112,6 +112,7 @@ The engine provides **Execution Metrics** for observability, including total tim
 ---
 
 ## Why This Engine Stands Out
+- **Asynchronous Pipeline**: Fully implemented using `async`/`await` syntax for non-blocking I/O, ensuring high concurrency and server responsiveness.
 - **Observability**: Built-in execution metrics track RAG and Inference efficiency.
 - **Connection Pooling**: Uses a shared `HttpClient` to reuse TCP connections, slashing network latency.
 - **Modular Services**: Decoupled `embedding`, `vector`, `chunking`, and `vlm` services allow for easy unit testing and replacement.
