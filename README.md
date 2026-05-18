@@ -79,6 +79,13 @@ Performs dynamic data fetching, RAG search, and multimodal fact verification.
 }
 ```
 
+**Sample cURL Request:**
+```bash
+curl -X POST http://localhost:8000/analyze \
+     -H "Content-Type: application/json" \
+     -d '{"topic": "Tesla Model Y"}'
+```
+
 **Sample Response:**
 The engine provides **Execution Metrics** for observability, including total time taken and chunk counts.
 
