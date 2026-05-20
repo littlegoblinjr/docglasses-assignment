@@ -6,7 +6,6 @@ from app.models.request_models import QueryRequest
 from app.services.embedding_service import get_embeddings_for_chunks
 from app.services.vector_store_service import vector_store
 from app.services.download_image_service import download_image
-from app.services.encode_image_service import encode_image
 from app.services.vlm_service import call_vlm
 from app.core.config import settings
 
@@ -31,14 +30,11 @@ async def analyze_document(payload: QueryRequest):
     query_embedding = get_embeddings_for_chunks([query_topic])[0]
     results = vector_store.search(query_embedding, k=settings.TOP_K_CHUNKS)
 
-    encoded_image = None
+    vlm_response = "No image available for analysis."
     if wiki_image:
         image_path = await download_image(wiki_image)
-        encoded_image = encode_image(image_path)
-
-    vlm_response = "No image available for analysis."
-    if encoded_image:
-        vlm_response = await call_vlm(encoded_image, results)
+        if image_path:
+            vlm_response = await call_vlm(image_path, results)
                 
                 
     return {
