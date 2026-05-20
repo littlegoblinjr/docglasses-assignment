@@ -25,7 +25,7 @@ The backend implements a sophisticated 4-layer pipeline:
 
 ### 3. Asynchronous Retrieval & Context Matching
 - **K-Nearest Neighbors (k=2)**: The system takes the topic's core premise, vectorizes it, and retrieves the top 2 most semantically similar chunks from the local memory store.
-- **Parallel Task Readiness**: The engine is built using `asyncio`, allowing it to handle hundreds of concurrent requests without blocking the event loop.
+- **High Concurrency Readiness**: The engine leverages asynchronous programming, allowing it to handle hundreds of concurrent requests without blocking the event loop.
 
 ### 4. Multimodal Synthesis & Grounded Verification
 - **VLM Integration**: Connects to open-source models (like Qwen2.5-VL) via an OpenAI-compatible local endpoint.
